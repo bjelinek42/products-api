@@ -6,9 +6,23 @@ GET http://localhost:3000/products/2
 
 ###
 POST http://localhost:3000/products
+content-type: application/json
+
+{
+  "name": "spoon",
+  "price": 3, 
+  "description": "for shoveling food into your mouth"
+}
 
 ###
-PATCH http://localhost:3000/products
+PATCH http://localhost:3000/products/6
+content-type: application/json
+
+{
+  "name": "knife",
+  "price": 4, 
+  "description": "for cutting food"
+}
 
 ###
-DELETE http://localhost:3000/products
+DELETE http://localhost:3000/products/7
