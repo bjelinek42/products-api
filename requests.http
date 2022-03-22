@@ -49,15 +49,12 @@ Content-Type: application/json
 
 ### order create
 POST http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNzYxNjl9.hQVYjvEJBPaHHL30e5wm2jFMbFz3RPDke-ZIu8iWZ4I
 Content-Type: application/json
 
 {
-  "user_id": 1, 
   "product_id": 2,
-  "quantity": 4,
-  "subtotal": 8,
-  "tax": 0.72,
-  "total": 8.72
+  "quantity": 4
 }
 
 ###
